@@ -10,5 +10,5 @@ else:
     print("{} arguments:".format(num_args))
 
 if num_args > 0:
-    for i, arg in enumerate(argv[1:], 1):
-        print("{}: {}".format(i, arg))
+    for i in range(1, num_args + 1):
+        print("{}: {}".format(i, argv[i]))
