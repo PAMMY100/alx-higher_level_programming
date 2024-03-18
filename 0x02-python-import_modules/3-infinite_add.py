@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-from sys import argv
-
-arguments = argv[1:]
-
-result = sum(int(arg) for arg in arguments)
-
-print(result)
+if __name__ == "__main__":
+    from sys import argv
+    result = 0
+    for i in range(1, len(argv)):
+        result += int(argv[i])
+    print(result)
